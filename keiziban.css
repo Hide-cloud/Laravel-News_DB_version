@@ -1,0 +1,148 @@
+body{
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+.topTitle{
+    font-size: 23px;
+    background-color: rgba(0, 255, 0, 0.3);
+    font-family: italic;
+}
+
+.sentence{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.errorMesseage{
+    color:red;
+}
+
+.topForm{
+    border-bottom:solid 1px black;
+}
+
+.titleInput{
+    margin-bottom: 10px;
+}
+
+.textbox{
+    width:467px;
+}
+
+.articleInput{
+    padding-left: 30px;
+}
+
+.articleInput textarea{
+    vertical-align: top;
+    margin-bottom: 60px;
+}
+
+#submitButton{
+    width: 65px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: orange;
+    font-size: 15px;
+}
+
+.postButton{
+    position: absolute;
+    top:350px;
+    left:495px;
+}
+
+.postArea{
+    border-bottom:solid 1px black;
+}
+
+.title{
+    font-weight: bold;
+    font-size: large;
+}
+
+.link{
+    margin-bottom: 10px;
+}
+
+.deleteBotton{
+    display:inline-block;
+}
+
+
+/*ここからcommentPage.php*/
+
+.commentPageTopTitle{
+    font-size: 23px;
+    background-color: rgba(0, 255, 0, 0.3);
+    font-family: italic;
+}
+
+
+.intermediate{
+    border-bottom:solid 1px black;
+}
+
+.commentArea{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.form-comment{
+    display:block;
+}
+
+.pushCommentArea{
+    display: inline-block;
+    position: relative;
+    margin-left: 1.0rem;
+}
+
+.commentInput{
+    
+    display: inline-block;
+    border:none;
+    box-shadow: 0 0.5rem 0.5rem hsla(0, 0%, 0%, .1);
+    background-image: linear-gradient(180deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem), linear-gradient(180deg, hsla(60, 100%, 85%, 1), hsla(60, 100%, 85%, 1));
+}
+
+.commentPushBotton{
+    font-size: large;
+    position: absolute;
+    top:126px;
+    left:50px;
+    background-color:#f2fcff;
+    border:dashed 1px #67c5ff; 
+    border-radius: 3px;
+}
+
+
+.pushedCommentArea{
+    display: inline-block;
+    position: relative;
+    margin-left: 1.0rem;
+}
+
+.pushedCommentInput{
+    
+    display: inline-block;
+    background-image: linear-gradient(180deg, hsla(0, 0%, 45%, .1) 2rem, hsla(0, 100%, 100%, 0) 2.5rem), linear-gradient(180deg, hsla(200, 100%, 85%, 1), hsla(200, 100%, 85%, 1));
+}
+
+.commentDeleteBotton{
+    font-size: large;
+    position: absolute;
+    top:126px;
+    left:50px;
+    color: blue;
+    text-decoration: underline;
+    background: none;
+    border: none;
+}
