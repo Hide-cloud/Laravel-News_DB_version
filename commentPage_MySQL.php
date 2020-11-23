@@ -70,11 +70,11 @@ $postID=$_GET['id'];
         $mysqli->query($insert_query);
       
       
-       ////header()で指定したページにリダイレクト
-       // //今回は今と同じ場所にリダイレクト（つまりWebページを更新）
-       //   header('Location: ' . $_SERVER['REQUEST_URI']);
-       // //プログラム終了
-       //   exit;
+       //header()で指定したページにリダイレクト
+        //今回は今と同じ場所にリダイレクト（つまりWebページを更新）
+          header('Location: ' . $_SERVER['REQUEST_URI']);
+        //プログラム終了
+          exit;
 
       //コメントを消すボタンが押された時
       }else if(isset($_POST['del'])){
@@ -147,8 +147,8 @@ $postID=$_GET['id'];
       
        <?php 
        //$commentArray配列からデータ(コメントIDとコメント)を取り出す
-          foreach($commentArray as $array){ ?>
-           
+          foreach($commentArray as $array){ 
+             if($postID === $array[1]){ ?>
                <form method="POST">
                <div class="pushedCommentArea">
                  <textarea class="pushedCommentInput" name="" cols="26" rows="9" readonly><?php echo $array[2]; ?></textarea>
@@ -158,7 +158,7 @@ $postID=$_GET['id'];
              </form>
          
            <?php 
-            
+             }
           }
         ?>
       
@@ -166,7 +166,7 @@ $postID=$_GET['id'];
     </section>　
 
      <div class="backHome">
-       <a href="keiziban.php">ホームへ戻る</a>
+       <a href="keiziban_MySQL.php">ホームへ戻る</a>
      </div>
 
 
